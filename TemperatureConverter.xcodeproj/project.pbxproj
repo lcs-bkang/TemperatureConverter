@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A6A300CB25C9E5460024A1B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300CA25C9E5460024A1B3 /* main.swift */; };
+		A6A300D325C9E5650024A1B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300D225C9E5650024A1B3 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		A6A300C725C9E5460024A1B3 /* TemperatureConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TemperatureConverter; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A300CA25C9E5460024A1B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A6A300D225C9E5650024A1B3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		A6A300BE25C9E5460024A1B3 = {
 			isa = PBXGroup;
 			children = (
+				A6A300D225C9E5650024A1B3 /* Extensions.swift */,
 				A6A300C925C9E5460024A1B3 /* TemperatureConverter */,
 				A6A300C825C9E5460024A1B3 /* Products */,
 			);
@@ -120,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6A300CB25C9E5460024A1B3 /* main.swift in Sources */,
+				A6A300D325C9E5650024A1B3 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
