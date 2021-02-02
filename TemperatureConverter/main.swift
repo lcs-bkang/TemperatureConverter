@@ -59,4 +59,13 @@ let numberToConvert = Double.collectInputDouble(withPrompt: "What number on the 
 
 // MARK: Process
 
+// Create a variable for the output
+var output = 0.0
+// Change the function that is called depending on the temperature scale entered.
+if fromTempScale == "C" {
+    output = CtoF(Celsius: numberToConvert)
+} else {
+    output = FtoC(Fahrenheit: numberToConvert)
+}
+
 // MARK: Output
