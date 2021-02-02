@@ -35,9 +35,6 @@ func FtoC(Fahrenheit f: Double) -> Double {
     return celsius
 }
 
-// Create a variable to allow the program to be repeated.
-var quit = ""
-
 // MARK: Input
 
 // Create a title and purpose for the program.
@@ -51,6 +48,7 @@ print("Q: Quit the program")
 // Get their input on which one they are converting from
 let fromTempScaleLow = String.collectInput(withPrompt: "What temperature scale are you converting from (C / F / Q): ", acceptableValues: ["C", "F", "Q", "c", "f", "q"])
 let fromTempScale = fromTempScaleLow.uppercased()
+
 // If statement to quit the program if that option is chosen.
 if fromTempScale != "Q" {
 // Variable for the full names of the temperature scales.
@@ -82,6 +80,8 @@ default:
 }
 // MARK: Output
 print("The converted temperature is \(output)")
+
+    
 } else {
     print("The program has been quit.")
 }
