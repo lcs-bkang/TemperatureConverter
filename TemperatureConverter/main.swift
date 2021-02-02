@@ -44,15 +44,18 @@ print("========================================================================"
 print("What temperature scale are you converting from?")
 print("C: Celsius")
 print("F: Fahrenheit")
+print("Q: Quit the program")
 // Get their input on which one they are converting from
-let fromTempScale = String.collectInput(withPrompt: "What temperature scale are you converting from (C / F): ", acceptableValues: ["C", "F"])
+let fromTempScale = String.collectInput(withPrompt: "What temperature scale are you converting from (C / F): ", acceptableValues: ["C", "F", "Q"])
 // Variable for the full names of the temperature scales.
 var scaleName = ""
 // If statement to get a string to input to the string below.
 if fromTempScale == "C" {
     scaleName = "Celsius"
-} else {
+} else if fromTempScale == "F" {
     scaleName = "Fahrenheit"
+} else {
+    scaleName = "Program has been quit."
 }
 // Ask and get the number they are converting.
 let numberToConvert = Double.collectInputDouble(withPrompt: "What number on the \(scaleName) temperature scale are you converting?", minimum: nil, maximum: nil)
@@ -62,11 +65,13 @@ let numberToConvert = Double.collectInputDouble(withPrompt: "What number on the 
 // Create a variable for the output
 var output = 0.0
 // Change the function that is called depending on the temperature scale entered.
-if fromTempScale == "C" {
+switch fromTempScale {
+case "C":
     output = CtoF(Celsius: numberToConvert)
-} else {
+case "F":
     output = FtoC(Fahrenheit: numberToConvert)
+default:
+    break
 }
-
 // MARK: Output
 print("The converted temperature is \(output)")
