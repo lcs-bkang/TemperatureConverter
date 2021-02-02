@@ -46,6 +46,16 @@ print("C: Celsius")
 print("F: Fahrenheit")
 // Get their input on which one they are converting from
 let fromTempScale = String.collectInput(withPrompt: "What temperature scale are you converting from (C / F): ", acceptableValues: ["C", "F"])
+// Variable for the full names of the temperature scales.
+var scaleName = ""
+// If statement to get a string to input to the string below.
+if fromTempScale == "C" {
+    scaleName = "Celsius"
+} else {
+    scaleName = "Fahrenheit"
+}
+// Ask and get the number they are converting.
+print("What number on the ")
 // MARK: Process
 
 // MARK: Output
