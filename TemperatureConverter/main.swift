@@ -37,6 +37,15 @@ func FtoC(Fahrenheit f: Double) -> Double {
 
 // MARK: Input
 
+// Create a title and purpose for the program.
+print("This is a converter for Celsius to Fahrenheit and Fahrenheit to Celsius.")
+print("========================================================================")
+// Ask for the temperature scale they are converting from
+print("What temperature scale are you converting from?")
+print("C: Celsius")
+print("F: Fahrenheit")
+// Get their input on which one they are converting from
+let fromTempScale = String.collectInput(withPrompt: "What temperature scale are you converting from (C / F): ", acceptableValues: ["C", "F"])
 // MARK: Process
 
 // MARK: Output
