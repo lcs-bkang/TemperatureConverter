@@ -69,3 +69,4 @@ if fromTempScale == "C" {
 }
 
 // MARK: Output
+print("The converted temperature is \(output)")
