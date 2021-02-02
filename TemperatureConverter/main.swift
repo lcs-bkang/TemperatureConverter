@@ -55,7 +55,8 @@ if fromTempScale == "C" {
     scaleName = "Fahrenheit"
 }
 // Ask and get the number they are converting.
-print("What number on the ")
+let numberToConvert = Double.collectInputDouble(withPrompt: "What number on the \(scaleName) temperature scale are you converting?", minimum: nil, maximum: nil)
+
 // MARK: Process
 
 // MARK: Output
