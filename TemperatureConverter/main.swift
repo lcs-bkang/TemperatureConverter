@@ -35,6 +35,9 @@ func FtoC(Fahrenheit f: Double) -> Double {
     return celsius
 }
 
+// Create a variable to allow the program to be repeated.
+var quit = ""
+
 // MARK: Input
 
 // Create a title and purpose for the program.
@@ -46,19 +49,23 @@ print("C: Celsius")
 print("F: Fahrenheit")
 print("Q: Quit the program")
 // Get their input on which one they are converting from
-let fromTempScale = String.collectInput(withPrompt: "What temperature scale are you converting from (C / F): ", acceptableValues: ["C", "F", "Q"])
+let fromTempScaleLow = String.collectInput(withPrompt: "What temperature scale are you converting from (C / F / Q): ", acceptableValues: ["C", "F", "Q", "c", "f", "q"])
+let fromTempScale = fromTempScaleLow.uppercased()
+// If statement to quit the program if that option is chosen.
+if fromTempScale != "Q" {
 // Variable for the full names of the temperature scales.
 var scaleName = ""
 // If statement to get a string to input to the string below.
-if fromTempScale == "C" {
+switch fromTempScale {
+case "C":
     scaleName = "Celsius"
-} else if fromTempScale == "F" {
+case "F":
     scaleName = "Fahrenheit"
-} else {
-    scaleName = "Program has been quit."
+default:
+    break
 }
 // Ask and get the number they are converting.
-let numberToConvert = Double.collectInputDouble(withPrompt: "What number on the \(scaleName) temperature scale are you converting?", minimum: nil, maximum: nil)
+let numberToConvert = Double.collectInputDouble(withPrompt: "What number on the \(scaleName) temperature scale are you converting? \n", minimum: nil, maximum: nil)
 
 // MARK: Process
 
@@ -75,3 +82,7 @@ default:
 }
 // MARK: Output
 print("The converted temperature is \(output)")
+} else {
+    print("The program has been quit.")
+}
+
