@@ -9,7 +9,7 @@ import Foundation
 // MARK: Temperatur Converter
 
 // Celsius to Fahrenheit function
-func CtoF(Celsius c: Double) -> Double {
+func convertCelsiusToFahrenheit(Celsius c: Double) -> Double {
     
     // Create a variable to hold the fahrenheit value
     var fahrenheit = 0.0
@@ -22,7 +22,7 @@ func CtoF(Celsius c: Double) -> Double {
 }
 
 // Fahrenheit to Celsius function
-func FtoC(Fahrenheit f: Double) -> Double {
+func convertFahrenheitToCelsius(Fahrenheit f: Double) -> Double {
     
     // Create a variable to hold the celsius value
     var celsius = 0.0
@@ -32,4 +32,15 @@ func FtoC(Fahrenheit f: Double) -> Double {
     
     // Return the value
     return celsius
+}
+
+// Celsius to Kelvin function
+func convertCelsiusToKelvin(Celsius c: Double) -> Double {
+    // Create a variable to hold the output
+    var output = 0.0
+    
+    // Code to convert
+    output = c + 273.15
+    // Return
+    return output
 }

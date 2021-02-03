@@ -75,9 +75,11 @@ var output = 0.0
 // Change the function that is called depending on the temperature scale entered.
 switch fromTempScale {
 case "C":
-    output = CtoF(Celsius: numberToConvert)
+    output = convertCelsiusToFahrenheit(Celsius: numberToConvert)
 case "F":
-    output = FtoC(Fahrenheit: numberToConvert)
+    output = convertFahrenheitToCelsius(Fahrenheit: numberToConvert)
+case "K":
+    output = 
 default:
     break
 }
