@@ -44,3 +44,14 @@ func convertCelsiusToKelvin(Celsius c: Double) -> Double {
     // Return
     return output
 }
+
+// Kelvin to Celsius function
+func convertKelvinToCelsius(Kelvin k: Double) -> Double {
+    // Variable for output
+    var output = 0.0
+    
+    // Convert
+    output = k - 273.15
+    // Return
+    return output
+}
