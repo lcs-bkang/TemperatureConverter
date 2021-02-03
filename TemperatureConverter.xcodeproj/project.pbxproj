@@ -9,10 +9,23 @@
 /* Begin PBXBuildFile section */
 		A6A300CB25C9E5460024A1B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300CA25C9E5460024A1B3 /* main.swift */; };
 		A6A300D325C9E5650024A1B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300D225C9E5650024A1B3 /* Extensions.swift */; };
+		A6A300D625CB0C2B0024A1B3 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300D525CB0C2B0024A1B3 /* Functions.swift */; };
+		A6A300DF25CB0CFB0024A1B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300DE25CB0CFB0024A1B3 /* main.swift */; };
+		A6A300E525CB0D120024A1B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300D225C9E5650024A1B3 /* Extensions.swift */; };
+		A6A300E825CB0D150024A1B3 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300D525CB0C2B0024A1B3 /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		A6A300C525C9E5460024A1B3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		A6A300DA25CB0CFB0024A1B3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -27,10 +40,20 @@
 		A6A300C725C9E5460024A1B3 /* TemperatureConverter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TemperatureConverter; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A300CA25C9E5460024A1B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		A6A300D225C9E5650024A1B3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A6A300D525CB0C2B0024A1B3 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		A6A300DC25CB0CFB0024A1B3 /* Time Converter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Time Converter"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6A300DE25CB0CFB0024A1B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A6A300C425C9E5460024A1B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A300D925CB0CFB0024A1B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,8 +66,10 @@
 		A6A300BE25C9E5460024A1B3 = {
 			isa = PBXGroup;
 			children = (
+				A6A300D525CB0C2B0024A1B3 /* Functions.swift */,
 				A6A300D225C9E5650024A1B3 /* Extensions.swift */,
 				A6A300C925C9E5460024A1B3 /* TemperatureConverter */,
+				A6A300DD25CB0CFB0024A1B3 /* Time Converter */,
 				A6A300C825C9E5460024A1B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				A6A300C725C9E5460024A1B3 /* TemperatureConverter */,
+				A6A300DC25CB0CFB0024A1B3 /* Time Converter */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +89,14 @@
 				A6A300CA25C9E5460024A1B3 /* main.swift */,
 			);
 			path = TemperatureConverter;
+			sourceTree = "<group>";
+		};
+		A6A300DD25CB0CFB0024A1B3 /* Time Converter */ = {
+			isa = PBXGroup;
+			children = (
+				A6A300DE25CB0CFB0024A1B3 /* main.swift */,
+			);
+			path = "Time Converter";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +119,23 @@
 			productReference = A6A300C725C9E5460024A1B3 /* TemperatureConverter */;
 			productType = "com.apple.product-type.tool";
 		};
+		A6A300DB25CB0CFB0024A1B3 /* Time Converter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6A300E025CB0CFB0024A1B3 /* Build configuration list for PBXNativeTarget "Time Converter" */;
+			buildPhases = (
+				A6A300D825CB0CFB0024A1B3 /* Sources */,
+				A6A300D925CB0CFB0024A1B3 /* Frameworks */,
+				A6A300DA25CB0CFB0024A1B3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Time Converter";
+			productName = "Time Converter";
+			productReference = A6A300DC25CB0CFB0024A1B3 /* Time Converter */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +146,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					A6A300C625C9E5460024A1B3 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					A6A300DB25CB0CFB0024A1B3 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				A6A300C625C9E5460024A1B3 /* TemperatureConverter */,
+				A6A300DB25CB0CFB0024A1B3 /* Time Converter */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +179,17 @@
 			files = (
 				A6A300CB25C9E5460024A1B3 /* main.swift in Sources */,
 				A6A300D325C9E5650024A1B3 /* Extensions.swift in Sources */,
+				A6A300D625CB0C2B0024A1B3 /* Functions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6A300D825CB0CFB0024A1B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6A300DF25CB0CFB0024A1B3 /* main.swift in Sources */,
+				A6A300E525CB0D120024A1B3 /* Extensions.swift in Sources */,
+				A6A300E825CB0D150024A1B3 /* Functions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +333,28 @@
 			};
 			name = Release;
 		};
+		A6A300E125CB0CFB0024A1B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A6A300E225CB0CFB0024A1B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +372,15 @@
 			buildConfigurations = (
 				A6A300CF25C9E5460024A1B3 /* Debug */,
 				A6A300D025C9E5460024A1B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6A300E025CB0CFB0024A1B3 /* Build configuration list for PBXNativeTarget "Time Converter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A300E125CB0CFB0024A1B3 /* Debug */,
+				A6A300E225CB0CFB0024A1B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
