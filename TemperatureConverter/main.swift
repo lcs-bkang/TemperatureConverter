@@ -31,7 +31,7 @@ default:
     break
 }
 // Ask for and get input for the temperature scale they are converting to
-let toTempScaleLow = String.collectInput(withPrompt: "What temperature scale are you converting to? (C / F / K) ", acceptableValues: ["C", "c", "F", "f", "K", "k"])
+let toTempScaleLow = String.collectInput(withPrompt: "What temperature scale are you converting to? (C / F / K): ", acceptableValues: ["C", "c", "F", "f", "K", "k"])
 let toTempScale = toTempScaleLow.uppercased()
 
 // Variable for the full names of the temperature scales.
