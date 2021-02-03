@@ -11,7 +11,7 @@ import Foundation
 // MARK: Input
 // Variable for if they want to quit or not (used below)
 var quit = ""
-let quitUpper = quit.uppercased()
+var quitUpper = ""
 // Create a title and purpose for the program.
 print("This is a converter for Celsius to Fahrenheit and Fahrenheit to Celsius.")
 print("========================================================================")
@@ -28,6 +28,7 @@ repeat {
     // Quit the program if they chose to
     switch fromTempScale {
     case "Q":
+        print("\n")
         print("The program has been quit.")
         exit(0)
     default:
@@ -100,11 +101,14 @@ repeat {
         break
     }
     // MARK: Output
+    print("")
     print("The temperature \(numberToConvert)\(fromDegrees) is converted into \(output)\(toDegrees).")
     
     // Ask if they want to quit or not
-    print("Do you want to continue converting temperatures? (Y / N): ")
+    print("\n")
+    print("Do you want to continue converting temperatures? (Y / N): ", terminator: "")
     quit = readLine()!
+    quitUpper = quit.uppercased()
     print("\n")
     print("\n")
 } while quitUpper != "N"
