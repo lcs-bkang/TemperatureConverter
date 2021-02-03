@@ -38,14 +38,18 @@ default:
     case "C":
         scaleName = "Celsius"
         fromDegrees = "°C"
-        toDegrees = "°F"
     case "F":
         scaleName = "Fahrenheit"
         fromDegrees = "°F"
-        toDegrees = "°C"
+    case "K":
+        scaleName = "Kelvin"
+        fromDegrees = "°K"
     default:
         break
     }
+    // Switch the toDegrees depending on the converted temperature scale
+    
+    
     // Ask and get the number they are converting.
     let numberToConvert = Double.collectInputDouble(withPrompt: "What number on the \(scaleName) temperature scale are you converting? \n", minimum: nil, maximum: nil)
     
