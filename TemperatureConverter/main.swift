@@ -22,9 +22,13 @@ print("Q: Quit the program")
 let fromTempScaleLow = String.collectInput(withPrompt: "What temperature scale are you converting from (C / F / Q): ", acceptableValues: ["C", "F", "Q", "c", "f", "q"])
 let fromTempScale = fromTempScaleLow.uppercased()
 
-// If statement to quit the program if that option is chosen.
-if fromTempScale != "Q" {
-    // Variable for the full names of the temperature scales.
+switch fromTempScale {
+case "Q":
+    print("The program has been quit.")
+    exit(0)
+default:
+    print("")
+// Variable for the full names of the temperature scales.
     var scaleName = ""
     // Variable for degrees (temperature scale) at the end of the program
     var fromDegrees = ""
@@ -60,7 +64,6 @@ if fromTempScale != "Q" {
     }
     // MARK: Output
     print("The temperature \(numberToConvert)\(fromDegrees) is converted into \(output)\(toDegrees).")
-} else {
-    print("The program has been quit.")
 }
+
 
