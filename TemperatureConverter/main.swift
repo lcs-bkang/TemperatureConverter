@@ -86,8 +86,7 @@ if fromTempScale != "Q" {
         break
     }
     // MARK: Output
-    print("The converted temperature \(numberToConvert)\(fromDegrees) is \(output)\(toDegrees)")
-    
+    print("The temperature \(numberToConvert)\(fromDegrees) is converted into \(output)\(toDegrees).")
 } else {
     print("The program has been quit.")
 }
