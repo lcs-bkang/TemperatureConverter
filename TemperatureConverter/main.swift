@@ -70,16 +70,29 @@ let numberToConvert = Double.collectInputDouble(withPrompt: "What number on the 
 
 // MARK: Process
 
+// Create a variable for the celsius equivalent
+var celsiusEquivalent = 0.0
+// Convert the chosen temperature scale to celsius
+switch fromTempScale {
+case "C":
+    celsiusEquivalent = numberToConvert
+case "F":
+    celsiusEquivalent = convertFahrenheitToCelsius(Fahrenheit: numberToConvert)
+case "K":
+    celsiusEquivalent = convertKelvinToCelsius(Kelvin: numberToConvert)
+default:
+    break
+}
 // Create a variable for the output
 var output = 0.0
 // Change the function that is called depending on the temperature scale entered.
-switch fromTempScale {
+switch toTempScale {
 case "C":
-    output = convertCelsiusToFahrenheit(Celsius: numberToConvert)
+    output = celsiusEquivalent
 case "F":
-    output = convertFahrenheitToCelsius(Fahrenheit: numberToConvert)
+    output = convertCelsiusToFahrenheit(Celsius: celsiusEquivalent)
 case "K":
-    output = 
+    output = convertCelsiusToKelvin(Celsius: celsiusEquivalent)
 default:
     break
 }
