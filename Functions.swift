@@ -126,6 +126,9 @@ func toMeasurementNames(to t: Int) -> String {
     return toName
 }
 
+// FROM X TO HOUR
+
+
 // Century to hours function
 func centuryToHours(Centuries c: Double) -> Double {
     // Variable for hour equivalent
@@ -227,7 +230,7 @@ func nanosecondsToHours(Nanoseconds n: Double) -> Double {
 }
 
 // Switch function for which conversion function to call
-func whichFunctionToCall(Number n: Double, from f: Int) -> Double {
+func fromXToHours(Number n: Double, from f: Int) -> Double {
     // Variable to hold the hour equivalent
     var hourEquivalent = 0.0
     
@@ -259,6 +262,10 @@ func whichFunctionToCall(Number n: Double, from f: Int) -> Double {
     }
     return hourEquivalent
 }
+
+
+// FROM HOUR TO X
+
 
 // Hour to century
 func hourToCentury(Hours h: Double) -> Double {
@@ -357,5 +364,38 @@ func hourToNanosecond(Hours h: Double) -> Double {
     // Convert
     output = h * 3600000000000
     // Return
+    return output
+}
+
+// Switch function to choose what function is called
+func fromHoursToX(Hour h: Double, to t: Int) -> Double {
+    // Variable to hold output
+    var output = 0.0
+    switch toMeasurement {
+    case 1:
+        output = hourToCentury(Hours: h)
+    case 2:
+        output = hourToDecade(Hours: h)
+    case 3:
+        output = hourToYear(Hours: h)
+    case 4:
+        output = hourToMonth(Hours: h)
+    case 5:
+        output = hourToDay(Hours: h)
+    case 6:
+        output = h
+    case 7:
+        output = hourToMinute(Hours: h)
+    case 8:
+        output = hourToSecond(Hours: h)
+    case 9:
+        output = hourToMillisecond(Hours: h)
+    case 10:
+        output = hourToMicrosecond(Hours: h)
+    case 11:
+        output = hourToNanosecond(Hours: h)
+    default:
+        break
+    }
     return output
 }

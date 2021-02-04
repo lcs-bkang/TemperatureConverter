@@ -38,7 +38,7 @@ default:
     print("You chose the following measurement of time: \(fromMeasurementName).")
 }
 // Collect input for the type of measurement they are converting to.
-let toMeasurement = Int.collectInputInt(withPrompt: "What measurement do you want to convert to? (1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9 / 10 / 11 ): ", minimum: 1, maximum: 12)
+let toMeasurement = Int.collectInputInt(withPrompt: "What measurement do you want to convert to? (1 / 2 / 3 / 4 / 5 / 6 / 7 / 8 / 9 / 10 / 11 ): ", minimum: 1, maximum: 11)
 // Function to choose what the name of measurement they are converting to.
 let toMeasurementName = toMeasurementNames(to: toMeasurement)
 // Tell them what time measurement they are converting to.
@@ -50,6 +50,6 @@ let numberToConvert = Double.collectInputDouble(withPrompt: "What number do you 
 // MARK: Processes
 
 // Find the hour equivalent
-let hourEquivalent = whichFunctionToCall(Number: numberToConvert, from: fromMeasurement)
+let hourEquivalent = fromXToHours(Number: numberToConvert, from: fromMeasurement)
 
 // 
