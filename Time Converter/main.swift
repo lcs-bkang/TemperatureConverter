@@ -46,10 +46,23 @@ print("You are converting to the following measurement of time: \(toMeasurementN
 
 // What number they want to convert
 let numberToConvert = Double.collectInputDouble(withPrompt: "What number do you want to convert? ", minimum: 0, maximum: nil)
-
+let numberToConvertNum = numberToConvert
 // MARK: Processes
 
+// Constant for the name of the time measurement they are converting from
+let fromName = fromMeasurementNames(from: fromMeasurement)
+// Constant for the name of the time measurement they are converting to
+let toName = toMeasurementNames(to: toMeasurement)
 // Find the hour equivalent
 let hourEquivalent = fromXToHours(Number: numberToConvert, from: fromMeasurement)
 
-// 
+//  Convert to their measurement of choice
+let output = fromHoursToX(Hour: hourEquivalent, to: toMeasurement)
+
+// MARK: Output
+
+// Print output
+print("The converted time measurement of \(numberToConvertNum) in \(fromName) has been converted to \(output) in \(toName)")
+
+// Ask and get reply if they want to repeat.
+let quit = String.collectInput(withPrompt: <#T##String#>, acceptableValues: <#T##[String]?#>)
