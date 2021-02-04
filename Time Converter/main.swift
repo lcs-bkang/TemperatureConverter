@@ -11,6 +11,7 @@ import Foundation
 // Menu
 print("This is a time converter.")
 print("=========================")
+while true {
 print("What measurement of time do you want to convert from?")
 print("1: Century")
 print("2: Decade")
@@ -42,7 +43,7 @@ let toMeasurement = Int.collectInputInt(withPrompt: "What measurement do you wan
 // Function to choose what the name of measurement they are converting to.
 let toMeasurementName = toMeasurementNames(to: toMeasurement)
 // Tell them what time measurement they are converting to.
-print("You are converting to the following measurement of time: \(toMeasurementName)")
+print("You are converting to the following measurement of time: \(toMeasurementName).")
 
 // What number they want to convert
 let numberToConvert = Double.collectInputDouble(withPrompt: "What number do you want to convert? ", minimum: 0, maximum: nil)
@@ -65,4 +66,17 @@ let output = fromHoursToX(Hour: hourEquivalent, to: toMeasurement)
 print("The converted time measurement of \(numberToConvertNum) in \(fromName) has been converted to \(output) in \(toName)")
 
 // Ask and get reply if they want to repeat.
-let quit = String.collectInput(withPrompt: <#T##String#>, acceptableValues: <#T##[String]?#>)
+let quit = String.collectInput(withPrompt: "Do you want to continue converting time measurements? (Y / N): ", acceptableValues: ["Y", "y", "N", "n"])
+switch quit {
+case "N":
+    print("")
+    print("Thank you have a nice day.")
+    exit(0)
+case "n":
+    print("")
+    print("Thank you have a nice day.")
+    exit(0)
+default:
+    break
+}
+}

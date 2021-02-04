@@ -65,15 +65,15 @@ func fromMeasurementNames(from f: Int) -> String {
     var fromName = ""
     
     // Changing from measurement name
-    switch fromMeasurement {
+    switch f {
     case 1:
-        fromName = "Century"
+        fromName = "Centuries"
     case 2:
-        fromName = "Decade"
+        fromName = "Decades"
     case 3:
-        fromName = "Year"
+        fromName = "Years"
     case 4:
-        fromName = "Month"
+        fromName = "Months"
     case 5:
         fromName = "Days"
     case 6:
@@ -97,15 +97,15 @@ func fromMeasurementNames(from f: Int) -> String {
 func toMeasurementNames(to t: Int) -> String {
     // Variable to hold the name
     var toName = ""
-    switch toMeasurement {
+    switch t {
     case 1:
-        toName = "Century"
+        toName = "Centuries"
     case 2:
-        toName = "Decade"
+        toName = "Decades"
     case 3:
-        toName = "Year"
+        toName = "Years"
     case 4:
-        toName = "Month"
+        toName = "Months"
     case 5:
         toName = "Days"
     case 6:
@@ -234,7 +234,7 @@ func fromXToHours(Number n: Double, from f: Int) -> Double {
     // Variable to hold the hour equivalent
     var hourEquivalent = 0.0
     
-    switch fromMeasurement {
+    switch f {
     case 1:
         hourEquivalent = centuryToHours(Centuries: n)
     case 2:
@@ -371,7 +371,7 @@ func hourToNanosecond(Hours h: Double) -> Double {
 func fromHoursToX(Hour h: Double, to t: Int) -> Double {
     // Variable to hold output
     var output = 0.0
-    switch toMeasurement {
+    switch t {
     case 1:
         output = hourToCentury(Hours: h)
     case 2:
