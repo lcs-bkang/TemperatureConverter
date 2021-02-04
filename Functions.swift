@@ -125,12 +125,237 @@ func toMeasurementNames(to t: Int) -> String {
     }
     return toName
 }
+
+// Century to hours function
+func centuryToHours(Centuries c: Double) -> Double {
+    // Variable for hour equivalent
+    var hourEquivalent = 0.0
+    // Convert
+    hourEquivalent = c * 876000
+    // Return
+    return hourEquivalent
+}
+
+// Decade to hours function
+func decadeToHours(Decade d: Double) -> Double {
+    // Variable for hour equivalent
+    var hourEquivalent = 0.0
+    // Convert
+    hourEquivalent = d * 87600
+    // Return
+    return hourEquivalent
+}
+
 // Years to hours function
 func yearsToHours(Years y: Double) -> Double {
     // Variable for output
-    var output = 0.0
+    var hourEquivalent = 0.0
     // Code to convert
-    output = y * 8765.81
+    hourEquivalent = y * 8760
+    // Return
+    return hourEquivalent
+}
+
+// Months to hours function
+func monthsToHours(Months m: Double) -> Double {
+    // Variable for hour equivalent
+    var hourEquivalent = 0.0
+    // Convert
+    hourEquivalent = m * 730
+    // Return
+    return hourEquivalent
+}
+
+// Days to hours function
+func daysToHours(Days d: Double) -> Double {
+    // Hour Equivalent
+    var hourEquivalent = 0.0
+    // Convert
+    hourEquivalent = d * 24
+    // Return
+    return hourEquivalent
+}
+
+// Minutes to hours function
+func minutesToHours(Minutes m: Double) -> Double {
+    // Hour Equivalent
+    var hourEquivalent = 0.0
+    // Convert
+    hourEquivalent = m / 60
+    // Return
+    return hourEquivalent
+}
+
+// Seconds to hours function
+func secondsToHours(Seconds s: Double) -> Double {
+    // Variable hour equivalent
+    var hourEquivalent = 0.0
+    // Convert
+    hourEquivalent = s / 3600
+    // Return
+    return hourEquivalent
+}
+
+// Milliseconds to hours function
+func millisecondsToHours(Milliseconds m: Double) -> Double {
+    // Variable hour equivalent
+    var hourEquivalent = 0.0
+    // Convert
+    hourEquivalent = m / 3600000
+    // Return
+    return hourEquivalent
+}
+
+// Microseconds to hours function
+func microsecondsToHours(Microseconds m: Double) -> Double {
+    // Hour equivalent
+    var hourEquivalent = 0.0
+    // Convert
+    hourEquivalent = m / 3600000000
+    // Return
+    return hourEquivalent
+}
+
+// Nanoseconds to hours function
+func nanosecondsToHours(Nanoseconds n: Double) -> Double {
+    // Hour equivalent
+    var hourEquivalent = 0.0
+    // Convert
+    hourEquivalent = n * 3600000000000
+    // Return
+    return hourEquivalent
+}
+
+// Switch function for which conversion function to call
+func whichFunctionToCall(Number n: Double, from f: Int) -> Double {
+    // Variable to hold the hour equivalent
+    var hourEquivalent = 0.0
+    
+    switch fromMeasurement {
+    case 1:
+        hourEquivalent = centuryToHours(Centuries: n)
+    case 2:
+        hourEquivalent = decadeToHours(Decade: n)
+    case 3:
+        hourEquivalent = yearsToHours(Years: n)
+    case 4:
+        hourEquivalent = monthsToHours(Months: n)
+    case 5:
+        hourEquivalent = daysToHours(Days: n)
+    case 6:
+        hourEquivalent = n
+    case 7:
+        hourEquivalent = minutesToHours(Minutes: n)
+    case 8:
+        hourEquivalent = secondsToHours(Seconds: n)
+    case 9:
+        hourEquivalent = millisecondsToHours(Milliseconds: n)
+    case 10:
+        hourEquivalent = microsecondsToHours(Microseconds: n)
+    case 11:
+        hourEquivalent = nanosecondsToHours(Nanoseconds: n)
+    default:
+        break
+    }
+    return hourEquivalent
+}
+
+// Hour to century
+func hourToCentury(Hours h: Double) -> Double {
+    // Output
+    var output = 0.0
+    // Convert
+    output = h / 876000
+    // Return
+    return output
+}
+
+// Hour to decade
+func hourToDecade(Hours h: Double) -> Double {
+    // Output
+    var output = 0.0
+    // Convert
+    output = h / 87600
+    // Return
+    return output
+}
+
+// Hour to year
+func hourToYear(Hours h: Double) -> Double {
+    // Output
+    var output = 0.0
+    // Convert
+    output = h / 8760
+    // Return
+    return output
+}
+
+// Hour to month
+func hourToMonth(Hours h: Double) -> Double {
+    // Output
+    var output = 0.0
+    // Convert
+    output = h / 730
+    // Return
+    return output
+}
+
+// Hour to day
+func hourToDay(Hours h: Double) -> Double {
+    // Output
+    var output = 0.0
+    // Convert
+    output = h / 24
+    // Return
+    return output
+}
+
+// Hour to minute
+func hourToMinute(Hours h: Double) -> Double {
+    // Output
+    var output = 0.0
+    // Convert
+    output = h * 60
+    // Return
+    return output
+}
+
+// Hour to second
+func hourToSecond(Hours h: Double) -> Double {
+    // Output
+    var output = 0.0
+    // Convert
+    output = h * 3600
+    // Return
+    return output
+}
+
+// Hour to millisecond
+func hourToMillisecond(Hours h: Double) -> Double {
+    // Output
+    var output = 0.0
+    // Convert
+    output = h * 3600000
+    // Return
+    return output
+}
+
+// Hour to microsecond
+func hourToMicrosecond(Hours h: Double) -> Double {
+    // Output
+    var output = 0.0
+    // Convert
+    output = h * 3600000000
+    // Return
+    return output
+}
+
+// Hour to nanosecond
+func hourToNanosecond(Hours h: Double) -> Double {
+    // Output
+    var output = 0.0
+    // Convert
+    output = h * 3600000000000
     // Return
     return output
 }
