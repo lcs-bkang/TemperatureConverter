@@ -6,7 +6,7 @@
 //
 
 import Foundation
-// MARK: Temperatur Converter
+// MARK: Temperature Converter
 
 // Celsius to Fahrenheit function
 func convertCelsiusToFahrenheit(Celsius c: Double) -> Double {
@@ -55,3 +55,8 @@ func convertKelvinToCelsius(Kelvin k: Double) -> Double {
     // Return
     return output
 }
+
+
+// MARK: Time Converter
+
+// 
