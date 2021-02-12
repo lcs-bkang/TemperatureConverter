@@ -21,6 +21,9 @@
 		A6DB246925D6EE2600605AC9 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB246825D6EE2600605AC9 /* Enumerations.swift */; };
 		A6DB246A25D6EE2600605AC9 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB246825D6EE2600605AC9 /* Enumerations.swift */; };
 		A6DB246B25D6EE2600605AC9 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB246825D6EE2600605AC9 /* Enumerations.swift */; };
+		A6DB248C25D6F16200605AC9 /* ShapeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB248B25D6F16200605AC9 /* ShapeList.swift */; };
+		A6DB248D25D6F16200605AC9 /* ShapeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB248B25D6F16200605AC9 /* ShapeList.swift */; };
+		A6DB248E25D6F16200605AC9 /* ShapeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB248B25D6F16200605AC9 /* ShapeList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +61,7 @@
 		A6DB245B25D6EDF800605AC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A6DB245D25D6EDF800605AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6DB246825D6EE2600605AC9 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
+		A6DB248B25D6F16200605AC9 /* ShapeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,8 +131,9 @@
 		A6DB245325D6EDF300605AC9 /* iOS-TimeConverter */ = {
 			isa = PBXGroup;
 			children = (
+				A6DB247A25D6F11B00605AC9 /* Models */,
+				A6DB247625D6F10100605AC9 /* Views */,
 				A6DB245425D6EDF300605AC9 /* iOS_TimeConverterApp.swift */,
-				A6DB245625D6EDF400605AC9 /* ContentView.swift */,
 				A6DB245825D6EDF800605AC9 /* Assets.xcassets */,
 				A6DB245D25D6EDF800605AC9 /* Info.plist */,
 				A6DB245A25D6EDF800605AC9 /* Preview Content */,
@@ -142,6 +147,22 @@
 				A6DB245B25D6EDF800605AC9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6DB247625D6F10100605AC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6DB245625D6EDF400605AC9 /* ContentView.swift */,
+				A6DB248B25D6F16200605AC9 /* ShapeList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A6DB247A25D6F11B00605AC9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +280,7 @@
 				A6A300D325C9E5650024A1B3 /* Extensions.swift in Sources */,
 				A6A300D625CB0C2B0024A1B3 /* Functions.swift in Sources */,
 				A6DB246925D6EE2600605AC9 /* Enumerations.swift in Sources */,
+				A6DB248C25D6F16200605AC9 /* ShapeList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +292,7 @@
 				A6A300E525CB0D120024A1B3 /* Extensions.swift in Sources */,
 				A6A300E825CB0D150024A1B3 /* Functions.swift in Sources */,
 				A6DB246A25D6EE2600605AC9 /* Enumerations.swift in Sources */,
+				A6DB248D25D6F16200605AC9 /* ShapeList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +304,7 @@
 				A6DB245525D6EDF300605AC9 /* iOS_TimeConverterApp.swift in Sources */,
 				A6DB246425D6EDFD00605AC9 /* Functions.swift in Sources */,
 				A6DB246B25D6EE2600605AC9 /* Enumerations.swift in Sources */,
+				A6DB248E25D6F16200605AC9 /* ShapeList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

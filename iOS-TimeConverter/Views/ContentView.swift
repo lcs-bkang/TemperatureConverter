@@ -10,9 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     // MARK: Stored Properties
-    @State private var fromTime = timeUnits.century
+    @State private var fromTime: timeUnits = .century
     @State private var input: String = ""
-    @State private var toTime = timeUnits.century
+    @State private var toTime: timeUnits = .century
     
     // MARK: Computed Properties
     private var toHours: Double {
@@ -22,6 +22,18 @@ struct ContentView: View {
         return fromHoursToX(Hour: toHours, to: toTime)
     }
     var body: some View {
+        
+        NavigationView {
+            Form {
+                Section(header: Text("What measurement of time are you converting from?")) {
+                    Text(timeUnits.century)
+                }
+                
+            }
+        }
+        
+        
+        
         Text("Hello, world!")
             .padding()
     }
