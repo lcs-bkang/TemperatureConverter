@@ -13,6 +13,14 @@
 		A6A300DF25CB0CFB0024A1B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300DE25CB0CFB0024A1B3 /* main.swift */; };
 		A6A300E525CB0D120024A1B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300D225C9E5650024A1B3 /* Extensions.swift */; };
 		A6A300E825CB0D150024A1B3 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300D525CB0C2B0024A1B3 /* Functions.swift */; };
+		A6DB245525D6EDF300605AC9 /* iOS_TimeConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB245425D6EDF300605AC9 /* iOS_TimeConverterApp.swift */; };
+		A6DB245725D6EDF400605AC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB245625D6EDF400605AC9 /* ContentView.swift */; };
+		A6DB245925D6EDF800605AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6DB245825D6EDF800605AC9 /* Assets.xcassets */; };
+		A6DB245C25D6EDF800605AC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6DB245B25D6EDF800605AC9 /* Preview Assets.xcassets */; };
+		A6DB246425D6EDFD00605AC9 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A300D525CB0C2B0024A1B3 /* Functions.swift */; };
+		A6DB246925D6EE2600605AC9 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB246825D6EE2600605AC9 /* Enumerations.swift */; };
+		A6DB246A25D6EE2600605AC9 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB246825D6EE2600605AC9 /* Enumerations.swift */; };
+		A6DB246B25D6EE2600605AC9 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DB246825D6EE2600605AC9 /* Enumerations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +51,13 @@
 		A6A300D525CB0C2B0024A1B3 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		A6A300DC25CB0CFB0024A1B3 /* Time Converter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Time Converter"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A300DE25CB0CFB0024A1B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A6DB245225D6EDF300605AC9 /* iOS-TimeConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-TimeConverter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6DB245425D6EDF300605AC9 /* iOS_TimeConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_TimeConverterApp.swift; sourceTree = "<group>"; };
+		A6DB245625D6EDF400605AC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6DB245825D6EDF800605AC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6DB245B25D6EDF800605AC9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A6DB245D25D6EDF800605AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6DB246825D6EE2600605AC9 /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,16 +75,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6DB244F25D6EDF300605AC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A6A300BE25C9E5460024A1B3 = {
 			isa = PBXGroup;
 			children = (
+				A6DB246825D6EE2600605AC9 /* Enumerations.swift */,
 				A6A300D525CB0C2B0024A1B3 /* Functions.swift */,
 				A6A300D225C9E5650024A1B3 /* Extensions.swift */,
 				A6A300C925C9E5460024A1B3 /* TemperatureConverter */,
 				A6A300DD25CB0CFB0024A1B3 /* Time Converter */,
+				A6DB245325D6EDF300605AC9 /* iOS-TimeConverter */,
 				A6A300C825C9E5460024A1B3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +103,7 @@
 			children = (
 				A6A300C725C9E5460024A1B3 /* TemperatureConverter */,
 				A6A300DC25CB0CFB0024A1B3 /* Time Converter */,
+				A6DB245225D6EDF300605AC9 /* iOS-TimeConverter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,6 +122,26 @@
 				A6A300DE25CB0CFB0024A1B3 /* main.swift */,
 			);
 			path = "Time Converter";
+			sourceTree = "<group>";
+		};
+		A6DB245325D6EDF300605AC9 /* iOS-TimeConverter */ = {
+			isa = PBXGroup;
+			children = (
+				A6DB245425D6EDF300605AC9 /* iOS_TimeConverterApp.swift */,
+				A6DB245625D6EDF400605AC9 /* ContentView.swift */,
+				A6DB245825D6EDF800605AC9 /* Assets.xcassets */,
+				A6DB245D25D6EDF800605AC9 /* Info.plist */,
+				A6DB245A25D6EDF800605AC9 /* Preview Content */,
+			);
+			path = "iOS-TimeConverter";
+			sourceTree = "<group>";
+		};
+		A6DB245A25D6EDF800605AC9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A6DB245B25D6EDF800605AC9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +181,23 @@
 			productReference = A6A300DC25CB0CFB0024A1B3 /* Time Converter */;
 			productType = "com.apple.product-type.tool";
 		};
+		A6DB245125D6EDF300605AC9 /* iOS-TimeConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6DB246025D6EDF800605AC9 /* Build configuration list for PBXNativeTarget "iOS-TimeConverter" */;
+			buildPhases = (
+				A6DB244E25D6EDF300605AC9 /* Sources */,
+				A6DB244F25D6EDF300605AC9 /* Frameworks */,
+				A6DB245025D6EDF300605AC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iOS-TimeConverter";
+			productName = "iOS-TimeConverter";
+			productReference = A6DB245225D6EDF300605AC9 /* iOS-TimeConverter.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -149,6 +211,9 @@
 						CreatedOnToolsVersion = 12.3;
 					};
 					A6A300DB25CB0CFB0024A1B3 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					A6DB245125D6EDF300605AC9 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -168,9 +233,22 @@
 			targets = (
 				A6A300C625C9E5460024A1B3 /* TemperatureConverter */,
 				A6A300DB25CB0CFB0024A1B3 /* Time Converter */,
+				A6DB245125D6EDF300605AC9 /* iOS-TimeConverter */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6DB245025D6EDF300605AC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6DB245C25D6EDF800605AC9 /* Preview Assets.xcassets in Resources */,
+				A6DB245925D6EDF800605AC9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6A300C325C9E5460024A1B3 /* Sources */ = {
@@ -180,6 +258,7 @@
 				A6A300CB25C9E5460024A1B3 /* main.swift in Sources */,
 				A6A300D325C9E5650024A1B3 /* Extensions.swift in Sources */,
 				A6A300D625CB0C2B0024A1B3 /* Functions.swift in Sources */,
+				A6DB246925D6EE2600605AC9 /* Enumerations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +269,18 @@
 				A6A300DF25CB0CFB0024A1B3 /* main.swift in Sources */,
 				A6A300E525CB0D120024A1B3 /* Extensions.swift in Sources */,
 				A6A300E825CB0D150024A1B3 /* Functions.swift in Sources */,
+				A6DB246A25D6EE2600605AC9 /* Enumerations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6DB244E25D6EDF300605AC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6DB245725D6EDF400605AC9 /* ContentView.swift in Sources */,
+				A6DB245525D6EDF300605AC9 /* iOS_TimeConverterApp.swift in Sources */,
+				A6DB246425D6EDFD00605AC9 /* Functions.swift in Sources */,
+				A6DB246B25D6EE2600605AC9 /* Enumerations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +446,53 @@
 			};
 			name = Release;
 		};
+		A6DB245E25D6EDF800605AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS-TimeConverter/Preview Content\"";
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iOS-TimeConverter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.iOS-TimeConverter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6DB245F25D6EDF800605AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"iOS-TimeConverter/Preview Content\"";
+				DEVELOPMENT_TEAM = S2D4LD8KV4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "iOS-TimeConverter/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.bradleykang.iOS-TimeConverter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -381,6 +519,15 @@
 			buildConfigurations = (
 				A6A300E125CB0CFB0024A1B3 /* Debug */,
 				A6A300E225CB0CFB0024A1B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6DB246025D6EDF800605AC9 /* Build configuration list for PBXNativeTarget "iOS-TimeConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6DB245E25D6EDF800605AC9 /* Debug */,
+				A6DB245F25D6EDF800605AC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
