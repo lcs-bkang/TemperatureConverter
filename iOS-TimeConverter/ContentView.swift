@@ -15,6 +15,12 @@ struct ContentView: View {
     @State private var toTime = timeUnits.century
     
     // MARK: Computed Properties
+    private var toHours: Double {
+        return fromXToHours(Number: input, from: fromTime)
+    }
+    private var output: String {
+        return fromHoursToX(Hour: toHours, to: toTime)
+    }
     var body: some View {
         Text("Hello, world!")
             .padding()

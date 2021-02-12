@@ -7,16 +7,16 @@
 
 import Foundation
 
-enum timeUnits: String {
-    case century = "century"
-    case decade = "decade"
-    case year = "year"
-    case month = "month"
-    case day = "day"
-    case hour = "hour"
-    case minute = "minute"
-    case second = "second"
-    case millisecond = "millisecond"
-    case microsecond = "microsecond"
-    case nanosecond = "nanosecond"
+enum timeUnits: Int {
+    case century = 1
+    case decade = 2
+    case year = 3
+    case month = 4
+    case day = 5
+    case hour = 6
+    case minute = 7
+    case second = 8
+    case millisecond = 9
+    case microsecond = 10
+    case nanosecond = 11
 }
