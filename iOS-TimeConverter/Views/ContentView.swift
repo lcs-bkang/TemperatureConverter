@@ -25,8 +25,34 @@ struct ContentView: View {
         
         NavigationView {
             Form {
+                // UI To select from measurement
                 Section(header: Text("What measurement of time are you converting from?")) {
-                    Text(timeUnits.century)
+
+                    Picker("From time units:", selection: $fromTime) {
+                        Text(timeUnits.century.rawValue)
+                            .tag(timeUnits.century)
+                        Text(timeUnits.decade.rawValue)
+                            .tag(timeUnits.decade)
+                        Text(timeUnits.year.rawValue)
+                            .tag(timeUnits.year)
+                        Text(timeUnits.month.rawValue)
+                            .tag(timeUnits.month)
+                        Text(timeUnits.day.rawValue)
+                            .tag(timeUnits.day)
+                        Text(timeUnits.hour.rawValue)
+                            .tag(timeUnits.hour)
+                        Text(timeUnits.minute.rawValue)
+                            .tag(timeUnits.minute)
+                        Text(timeUnits.second.rawValue)
+                            .tag(timeUnits.second)
+                        Text(timeUnits.millisecond.rawValue)
+                            .tag(timeUnits.millisecond)
+                        Text(timeUnits.microsecond.rawValue)
+                            .tag(timeUnits.microsecond)
+                        Text(timeUnits.nanosecond.rawValue)
+                            .tag(timeUnits.nanosecond)
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
                 }
                 
             }
