@@ -24,6 +24,7 @@ struct ContentView: View {
     var body: some View {
         
         NavigationView {
+            
             Form {
                 // UI To select from measurement
                 Section(header: Text("What measurement of time are you converting from?")) {
@@ -55,6 +56,41 @@ struct ContentView: View {
                     .pickerStyle(SegmentedPickerStyle())
                 }
                 
+                // UI for value to convert
+                Section(header: Text("Value to convert?")) {
+                TextField("i.e. 316", text: $input)
+                    .keyboardType(.numberPad)
+                }
+                
+                // UI to choose what to convert to
+                Section(header: Text("What measurement of time are you converting to?")) {
+
+                    Picker("To time units:", selection: $toTime) {
+                        Text(timeUnits.century.rawValue)
+                            .tag(timeUnits.century)
+                        Text(timeUnits.decade.rawValue)
+                            .tag(timeUnits.decade)
+                        Text(timeUnits.year.rawValue)
+                            .tag(timeUnits.year)
+                        Text(timeUnits.month.rawValue)
+                            .tag(timeUnits.month)
+                        Text(timeUnits.day.rawValue)
+                            .tag(timeUnits.day)
+                        Text(timeUnits.hour.rawValue)
+                            .tag(timeUnits.hour)
+                        Text(timeUnits.minute.rawValue)
+                            .tag(timeUnits.minute)
+                        Text(timeUnits.second.rawValue)
+                            .tag(timeUnits.second)
+                        Text(timeUnits.millisecond.rawValue)
+                            .tag(timeUnits.millisecond)
+                        Text(timeUnits.microsecond.rawValue)
+                            .tag(timeUnits.microsecond)
+                        Text(timeUnits.nanosecond.rawValue)
+                            .tag(timeUnits.nanosecond)
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+
             }
         }
         
