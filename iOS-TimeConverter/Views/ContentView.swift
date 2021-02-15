@@ -91,13 +91,17 @@ struct ContentView: View {
                     }
                     .pickerStyle(SegmentedPickerStyle())
 
-            }
+                }
+                
+                // UI for the result
+                Section(header: Text("The result is:")) {
+                
+                Text(output)
+                    // Making it so that it can be on multiple lines
+                    .fixedSize(horizontal: false, vertical: true)
+                }
         }
-        
-        
-        
-        Text("Hello, world!")
-            .padding()
+            .navigationTitle("Time Converter")
     }
 }
 
